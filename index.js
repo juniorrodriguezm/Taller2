@@ -1,8 +1,9 @@
 const MongoClient = require('mongodb').MongoClient,
-express = require('express'),
-engines = require('consolidate');
+    express = require('express'),
+    engines = require('consolidate');
 
-var app = express(), db;
+var app = express(),
+    db;
 
 app.engine('hbs', engines.handlebars);
 
@@ -13,17 +14,25 @@ app.use(express.static('public'));
 
 // Conectarse a Base de Datos
 MongoClient.connect('mongodb://localhost:27017', function (err, client) {
-if (err) throw err;
+    if (err) throw err;
 
-db = client.db('fuentes');
+    db = client.db('fuentes');
 
-// Iniciar servidor
-app.listen(5000);
-console.log("Escuchando servidor")
+    // Iniciar servidor
+    app.listen(5000);
+    console.log("Escuchando servidor")
 });
 
 /*Esta parte es para cargar las paginas*/
 app.get('/', (req, res) => {
-    res.render('index', {
-    });
-})
+
+    var fuentes = db.collection('fuentes')
+        .find();
+
+        fuentes.toArray((err, result) => {
+        console.log('Escuchando servidor')
+        res.render('index', {
+            fuentes: result
+        });
+    })
+});
