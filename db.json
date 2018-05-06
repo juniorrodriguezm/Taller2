@@ -1,0 +1,26 @@
+{
+
+    "fuentes": [{
+            "nombre": "Buffon",
+            "precio": 75.000,
+            "categoria": "serif",
+            "descripcion": "",
+            "peso": "2.5 Mb",
+            "estilos": 4
+
+
+        },
+        {
+            "nombre": "Nexa Rust Sans",
+            "precio": 460.000,
+            "categoria": "sans serif",
+            "descripcion": "",
+            "peso": "7 Mb",
+            "estilos": 50
+
+
+        }
+
+
+    ]
+}
