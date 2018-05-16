@@ -39,6 +39,14 @@ app.get('/', (req, res) => {
             licencia: req.query.licencia
         });
 
+        if (req.query.estilos)
+        fuentes.filter({
+
+            estilos: {
+                $gte: parseInt(req.query.estilos)
+            }
+        });
+
         fuentes.toArray((err, result) => {
         console.log('Escuchando servidor')
         res.render('index', {

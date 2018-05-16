@@ -16,11 +16,7 @@
 
     <nav>
 
-        <img src="/Imagenes/menuHamburguesa.png" alt="" class="menuHam">
-
-
-
-        <a class="logo" href="index.html">Fontype.</a>
+    <a class="logo" href="index.html">Fontype.</a>
 
 
         <div class="menuResponsive">
@@ -98,7 +94,7 @@
                     </li>
                 </ul>
                 <h1 class="tituloLicencia">Licencia</h1>
-                
+
                 <ul class="licencia">
                     <li>
                         <a href="/?licencia=comercial">Comercial</a>
@@ -111,6 +107,17 @@
                     </li>
                 </ul>
 
+                <h1 class="tituloLicencia">Numero de estilos</h1>
+
+
+ <div class="slider">
+
+<input type="range" min="1" max="18" value="1" id="estilos" onclick="filtroTres();" />
+                    
+                    <p><span id="spanEstilos"></span> estilos</p>
+ </div>
+                    
+
             </div>
 
         </div>
@@ -120,7 +127,6 @@
 
 <div class="encabezadoFuentes">
 
-<a href="#" class="ordenarPrecio">Ordenar por precio</a>
 
 <div class="ordenar">
 
@@ -260,7 +266,7 @@
 
     </footer>
 
-
+<script src="js/filtroTres.js"></script>
 
 </body>
 

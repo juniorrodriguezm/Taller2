@@ -222,30 +222,21 @@ nav {
 }
 
 .tiendaFuentes {
-    
     display: flex;
     justify-content: space-around;
-     margin-top: 50px;
-
+    margin-top: 50px;
     .contenedorFiltros {
         background-color: $menta;
         width: 250px;
         display: flex;
         font-family: 'Source Sans Pro', sans-serif;
         .filtros {
-
             padding: 20px;
-
-h1{
-
-    font-family: BreeSerif-Regular;
-    color: $azulOscuro;
-    font-size: 20px; 
-
-}
-
-
-
+            h1 {
+                font-family: BreeSerif-Regular;
+                color: $azulOscuro;
+                font-size: 20px;
+            }
             .categorias {
                 list-style: none;
                 a {
@@ -258,14 +249,12 @@ h1{
                     color: $lila
                 }
             }
-
-            .tituloLicencia{
+            .tituloLicencia {
                 margin-top: 30px;
             }
             .licencia {
                 list-style: none;
                 a {
-                    
                     font-weight: 400;
                     font-size: 18px;
                     color: $azulOscuro;
@@ -275,59 +264,67 @@ h1{
                     color: $lila
                 }
             }
+
+            .slider{
+                #estilos{
+                    -webkit-appearance: none;
+                    width: 100%;
+                    height: 5px;
+                    border-radius: 3px;
+                    background: $lila;
+                    outline: none;
+                    opacity: 0.7;
+                    -webkit-transition: .2s;
+                    transition: opacity .2s;
+                }
+    
+                #estilos:hover {
+                    opacity: 1;
+                }
+                
+                #estilos::-webkit-slider-thumb {
+                    -webkit-appearance: none;
+                    appearance: none;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    background: $rojo;
+                    cursor: pointer;
+                }
+    
+                .spanEstilos{
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: $azulOscuro;
+                    text-decoration: none;
+    
+                }
+
+            }
+            
         }
     }
-
-
-    .listadoFuentes{
-
+    .listadoFuentes {
         width: 70%;
         margin-left: -280px;
-
-        .encabezadoFuentes{
-            width: 100%;
+        .encabezadoFuentes {
+            width: 92%;
             height: 60px;
             background-color: $gris;
-            display: flex;
-            justify-content: space-between;
             padding: 10px;
+            display: flex;
             align-items: center;
-
-            .ordenarPrecio {
-                font-family: 'Source Sans Pro', sans-serif;
-                font-weight: 400;
-                font-size: 18px;
-                color: white;
-                text-decoration: none;
-                background-color: $lila;
-                border-radius: 90px;
-                padding: 10px;
-
-            }
-            .ordenarPrecio:hover {
-                background-color: $amarillo;
-                color: $lila
-            }
-
+            justify-content: flex-end;
         }
         .fuentes {
             width: 100%;
             display: flex;
             flex-wrap: wrap;
-
-
-
-            .fuenteImagen{
-
+            .fuenteImagen {
                 transform: scale(0.8);
             }
-
-
         }
-
     }
-
-    
 }
 
 footer {
