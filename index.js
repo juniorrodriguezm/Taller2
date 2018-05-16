@@ -29,6 +29,12 @@ app.get('/', (req, res) => {
     var fuentes = db.collection('fuentes')
         .find();
 
+        if (req.query.categoria)
+        fuentes.filter({
+            categoria: req.query.categoria
+        });
+
+
         fuentes.toArray((err, result) => {
         console.log('Escuchando servidor')
         res.render('index', {

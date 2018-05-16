@@ -15,7 +15,7 @@
         {
             "nombre": "Nexa Rust Sans",
             "precio": 460.000,
-            "categoria": "sans serif",
+            "categoria": "sansserif",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "peso": "7 Mb",
             "estilos": 50,
@@ -51,7 +51,7 @@
         {
             "nombre": "Palm Canyon Drive",
             "precio": 700.000,
-            "categoria": "handWriting",
+            "categoria": "handwriting",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "peso": "1 Mb",
             "estilos": 3,
@@ -86,7 +86,7 @@
         {
             "nombre": " Orev",
             "precio": 8.000,
-            "categoria": "sans serif",
+            "categoria": "sansserif",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "peso": "4 Mb",
             "estilos": 18,
@@ -146,7 +146,7 @@
         {
             "nombre": "Bavro",
             "precio": 96.000,
-            "categoria": "sans serif",
+            "categoria": "sansserif",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "peso": "6 Mb",
             "estilos": 1,
@@ -156,7 +156,7 @@
         {
             "nombre": "October Twilight",
             "precio": 120.000,
-            "categoria": " handwriting",
+            "categoria": "handwriting",
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "peso": "2 Mb",
             "estilos": 1,
