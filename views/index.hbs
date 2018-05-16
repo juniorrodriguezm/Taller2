@@ -16,7 +16,7 @@
 
     <nav>
 
-    <a class="logo" href="index.html">Fontype.</a>
+        <a class="logo" href="index.html">Fontype.</a>
 
 
         <div class="menuResponsive">
@@ -110,56 +110,74 @@
                 <h1 class="tituloLicencia">Numero de estilos</h1>
 
 
- <div class="slider">
+                <div class="slider">
 
-<input type="range" min="1" max="18" value="1" id="estilos" onclick="filtroTres();" />
-                    
-                    <p><span id="spanEstilos"></span> estilos</p>
- </div>
-                    
+                    <input type="range" min="1" max="18" value="1" id="estilos" onclick="filtroTres();" />
+
+                    <p>
+                        <span id="spanEstilos"></span> estilos</p>
+                </div>
+
 
             </div>
 
         </div>
 
 
-<div class="listadoFuentes">
+        <div class="listadoFuentes">
 
-<div class="encabezadoFuentes">
-
-
-<div class="ordenar">
-
-<a href="#"><img src="img/lista.png" alt=""></a>
-<a href="#"><img src="img/cuadros.png" alt=""></a>
-<a href="#"><img src="img/cuadro-texto.png" alt=""></a>
-
-</div>
+            <div class="encabezadoFuentes">
 
 
+                <div class="ordenar">
+
+                    <a href="#">
+                        <img src="img/lista.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/cuadros.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/cuadro-texto.png" alt="">
+                    </a>
+
+                </div>
 
 
 
-</div>
-
-<div class="fuentes">
 
 
-            {{#each fuentes}}
-            <img src="{{imagen}}" alt="" class="fuenteImagen">
-            {{/each}}
+            </div>
 
+            <div class="fuentes">
+
+
+                {{#each fuentes}}
+                <div class="fuente">
+<img src="{{imagen}}" alt="" class="fuenteImagen">
+                <div class="botones">
+                    <button class="ver">Ver</button>
+                    <button class="agregar">Agregar al carrito</button>
+
+                </div>
+
+                </div>
+                
+
+
+                {{/each}}
+
+
+            </div>
 
         </div>
 
-</div>
-        
 
-        
+
 
     </section>
 
-     <footer>
+    <footer>
 
         <div class="filaArriba">
             <div class="colUno">
@@ -266,7 +284,7 @@
 
     </footer>
 
-<script src="js/filtroTres.js"></script>
+    <script src="js/filtroTres.js"></script>
 
 </body>
 
