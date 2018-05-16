@@ -54,3 +54,10 @@ app.get('/', (req, res) => {
         });
     })
 });
+
+/*Esta parte es para cargar las paginas*/
+app.get('/buffon', (req, res) => {
+
+    res.render('producto');
+
+});

@@ -1,7 +1,7 @@
 document.querySelectorAll('.agregar').forEach(function (button) {
     button.addEventListener('click', function () {
         var id = button.parentNode.parentNode.getAttribute('data-id');
-        if (arreglo.indexOf(id) >= 0) {
+        if (arreglo.indexOf(id) >= 0 + "items") {
             console.log('paila');
             return;
         }
