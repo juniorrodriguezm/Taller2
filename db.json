@@ -4,9 +4,11 @@
             "nombre": "Buffon",
             "precio": 75.000,
             "categoria": "serif",
-            "descripcion": "",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "peso": "2.5 Mb",
-            "estilos": 4
+            "estilos": 4,
+            "licencia": "comercial",
+            "imagen": "img/fuentes/Buffon.png"
 
 
         },
@@ -14,11 +16,152 @@
             "nombre": "Nexa Rust Sans",
             "precio": 460.000,
             "categoria": "sans serif",
-            "descripcion": "",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "peso": "7 Mb",
-            "estilos": 50
+            "estilos": 50,
+            "licencia": "comercial",
+            "imagen": "img/fuentes/Nexa.png"
 
 
+        },
+        {
+            "nombre": "Free Serif",
+            "precio": 20.000,
+            "categoria": "serif",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "peso": "2 Mb",
+            "estilos": 2,
+            "licencia": "comercial",
+            "imagen": "img/fuentes/FreeSerif.png"
+
+
+        },
+        {
+            "nombre": "Brayden Scrip Sans",
+            "precio": 70.000,
+            "categoria": "display",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "peso": "3 Mb",
+            "estilos": 3,
+            "licencia": "comercial",
+            "imagen": "img/fuentes/Brayden.png"
+
+
+        },
+        {
+            "nombre": "Palm Canyon Drive",
+            "precio": 700.000,
+            "categoria": "handWriting",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "peso": "1 Mb",
+            "estilos": 3,
+            "licencia": "comercial",
+            "imagen": "img/fuentes/Palm.png"
+
+
+
+        },
+        {
+            "nombre": "Zing Rust",
+            "precio": 230.000,
+            "categoria": "display",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "peso": "1 Mb",
+            "estilos": 3,
+            "licencia": "comercial",
+            "imagen": "img/fuentes/Zing.png"
+
+
+        },
+        {
+            "nombre": "Comic Block",
+            "precio": 0,
+            "categoria": "display",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "peso": "5 Mb",
+            "estilos": 1,
+            "licencia": "gratis",
+            "imagen": "img/fuentes/Comic.png"
+        },
+        {
+            "nombre": " Orev",
+            "precio": 8.000,
+            "categoria": "sans serif",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "peso": "4 Mb",
+            "estilos": 18,
+            "licencia": "comercial",
+            "imagen": "img/fuentes/orev.png"
+        },
+        {
+            "nombre": "Nouvelle Vague",
+            "precio": 800.000,
+            "categoria": "serif",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "peso": "4 Mb",
+            "estilos": 1,
+            "licencia": "comercial",
+            "imagen": "img/fuentes/Nouvelle.png"
+        },
+        {
+            "nombre": "Gobold",
+            "precio": 350.000,
+            "categoria": "display",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "peso": "40 Mb",
+            "estilos": 28,
+            "licencia": "comercial",
+            "imagen": "img/fuentes/Gobold.png"
+        },
+        {
+            "nombre": "TrashHand",
+            "precio": 0,
+            "categoria": "handwriting",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "peso": "1.2 Mb",
+            "estilos": 1,
+            "licencia": "educativo",
+            "imagen": "img/fuentes/TrashHand.png"
+        },
+        {
+            "nombre": "Pixel Operator",
+            "precio": 0,
+            "categoria": "Display",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "peso": "9 Mb",
+            "estilos": 15,
+            "licencia": "gratis",
+            "imagen": "img/fuentes/Pixel.png"
+        },
+        {
+            "nombre": "Sunrise",
+            "precio": 20.000,
+            "categoria": "handwriting",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "peso": "5 Mb",
+            "estilos": 1,
+            "licencia": "educativo",
+            "imagen": "img/fuentes/Sunrise.png"
+        },
+        {
+            "nombre": "Bavro",
+            "precio": 96.000,
+            "categoria": "sans serif",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "peso": "6 Mb",
+            "estilos": 1,
+            "licencia": "educativo",
+            "imagen": "img/fuentes/Bavro.png"
+        },
+        {
+            "nombre": "October Twilight",
+            "precio": 120.000,
+            "categoria": " handwriting",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "peso": "2 Mb",
+            "estilos": 1,
+            "licencia": "comercial" ,
+            "imagen": "img/fuentes/October.png"
         }
 
 

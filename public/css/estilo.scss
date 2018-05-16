@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,600i,700');
+$azulOscuro: #213440;
+$verdeClaro: #ced97e;
+$lila: #5c60a1;
+$amarillo: #FDB84E;
+$beige: #FFEFD5;
+$turquesa: #37646F;
+$menta: #D9E4D7;
+$gris: #E1E7E8;
+$rojo: #8c2e36;
+$piel: #d9c2a7;
+$rosa: #f2a595;
+@font-face {
+    font-family: Buffon-Thin;
+    src: url(/Fuentes/Buffon-Thin.otf);
+}
+
+@font-face {
+    font-family: Buffon-Regular;
+    src: url(/Fuentes/Buffon-Regular.otf);
+}
+
+@font-face {
+    font-family: Buffon-Bold;
+    src: url(/Fuentes/Buffon-Bold.otf);
+}
+
+@font-face {
+    font-family: Buffon-Heavy;
+    src: url(/Fuentes/Buffon-Heavy.otf);
+}
+
+@font-face {
+    font-family: FreeSerifBold;
+    src: url(/Fuentes/FreeSerifBold.ttf);
+}
+
+@font-face {
+    font-family: BreeSerif-Regular;
+    src: url(/Fuentes/BreeSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: Heritage;
+    src: url(/Fuentes/Heritage.otf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: #f2f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: -3px;
+    .menuHam {
+        display: none;
+        @media only screen and (max-width: 360px) {
+            display: flex;
+            width: 40px;
+            padding-left: 10px;
+        }
+    }
+    .menuResponsive {
+        display: none;
+        position: absolute;
+        width: 100%;
+        background-color: $gris;
+        justify-content: center;
+        margin-top: 130px;
+        padding-bottom: 20px;
+        @media only screen and (max-width: 360px) {
+            display: flex;
+        }
+        .vlMenuRes {
+            border-bottom: 1px solid $lila;
+            width: 100%;
+            z-index: 1;
+            margin: 0px;
+            padding: 0px;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        li {
+            display: inline-block;
+            padding: 20px;
+            a {
+                text-decoration: none;
+                color: $azulOscuro;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 300;
+                font-size: 17px;
+            }
+            a:hover {
+                color: $amarillo;
+            }
+            .descarga {
+                background-color: $verdeClaro;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                border-radius: 100px;
+                border: solid $lila 1px;
+                transition: linear 0.2s;
+            }
+            .descarga:hover {
+                background-color: $lila;
+                color: white;
+                font-weight: 300;
+            }
+        }
+    }
+    .logo {
+        text-decoration: none;
+        color: $azulOscuro;
+        font-family: 'FreeSerifBold';
+        font-size: 30px;
+        @media only screen and (max-width: 360px) {
+            width:100%;
+            text-align: center;
+        }
+    }
+    .logo:hover {
+        color: $amarillo;
+        cursor: pointer;
+    }
+    ul {
+        display: flex;
+        @media only screen and (max-width: 360px) {
+            display: none;
+        }
+    }
+    li {
+        display: inline-block;
+        padding-left: 50px;
+        a {
+            text-decoration: none;
+            color: $azulOscuro;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 300;
+            font-size: 17px;
+        }
+        a:hover {
+            color: $amarillo;
+        }
+        .descarga {
+            background-color: white;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border-radius: 100px;
+            border: solid $lila 1px;
+            transition: linear 0.2s;
+        }
+        .descarga:hover {
+            background-color: $verdeClaro;
+            color: $azulOscuro;
+            font-weight: 300;
+        }
+    }
+    .navegacion {
+        display: flex;
+        align-items: center;
+    }
+    .carrito {
+        background-color: white;
+        padding: 5px;
+        padding-left: 10px;
+        width: 23px;
+        height: 27px;
+        margin-left: 10px;
+        border: none;
+        border-left: solid $lila 1px;
+        border-top: solid $lila 1px;
+        border-bottom: solid $lila 1px;
+        border-bottom-left-radius: 50px;
+        border-top-left-radius: 50px;
+        @media only screen and (max-width: 360px) {
+            display: none;
+        }
+    }
+    .vl {
+        border-left: 1px solid $lila;
+        height: 20px;
+        z-index: 1;
+        @media only screen and (max-width: 360px) {
+            display: none;
+        }
+    }
+    .item {
+        background-color: white;
+        padding: 5px;
+        margin-left: -3px;
+        width: 60px;
+        height: 27px;
+        border: none;
+        border-right: solid $lila 1px;
+        border-top: solid $lila 1px;
+        border-bottom: solid $lila 1px;
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 50px;
+        padding-left: 10px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 300;
+        font-style: italic;
+        font-size: 18px;
+        color: $lila;
+        @media only screen and (max-width: 360px) {
+            display: none;
+        }
+    }
+}
+
+.tiendaFuentes {
+    
+    display: flex;
+    justify-content: space-around;
+     margin-top: 50px;
+
+    .contenedorFiltros {
+        background-color: $menta;
+        width: 250px;
+        display: flex;
+        font-family: 'Source Sans Pro', sans-serif;
+        .filtros {
+
+            padding: 20px;
+
+h1{
+
+    font-family: BreeSerif-Regular;
+    color: $azulOscuro;
+    font-size: 20px; 
+
+}
+
+
+
+            .categorias {
+                list-style: none;
+                a {
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: $azulOscuro;
+                    text-decoration: none;
+                }
+                a:hover {
+                    color: $lila
+                }
+            }
+
+            .tituloLicencia{
+                margin-top: 30px;
+            }
+            .licencia {
+                list-style: none;
+                a {
+                    
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: $azulOscuro;
+                    text-decoration: none;
+                }
+                a:hover {
+                    color: $lila
+                }
+            }
+        }
+    }
+
+
+    .listadoFuentes{
+
+        width: 70%;
+        margin-left: -280px;
+
+        .encabezadoFuentes{
+            width: 100%;
+            height: 60px;
+            background-color: $gris;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            align-items: center;
+
+            .ordenarPrecio {
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                color: white;
+                text-decoration: none;
+                background-color: $lila;
+                border-radius: 90px;
+                padding: 10px;
+
+            }
+            .ordenarPrecio:hover {
+                background-color: $amarillo;
+                color: $lila
+            }
+
+        }
+        .fuentes {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+
+
+            .fuenteImagen{
+
+                transform: scale(0.8);
+            }
+
+
+        }
+
+    }
+
+    
+}
+
+footer {
+    width: 100%;
+    height: 400px;
+    background-color: $azulOscuro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    @media only screen and (max-width: 360px) {
+        height: 780px;
+        margin-top: 70px;
+    }
+    .filaArriba {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        @media only screen and (max-width: 360px) {
+            width: 100%;
+            flex-direction: column;
+            margin-top: 100px;
+        }
+        .vl2 {
+            @media only screen and (max-width: 360px) {
+                border-bottom: 1px solid white;
+                width: 90%;
+                z-index: 1;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+        }
+        .vl {
+            border-left: 1px solid white;
+            height: 200px;
+            z-index: 1;
+            margin: 30px;
+            @media only screen and (max-width: 360px) {
+                display:none;
+            }
+        }
+        .colUno {
+            width: 15%;
+            @media only screen and (max-width: 360px) {
+                width: 90%;
+                margin-top: -40px;
+            }
+            .logo {
+                text-decoration: none;
+                color: white;
+                font-family: 'FreeSerifBold';
+                font-size: 30px;
+            }
+            .logo:hover {
+                color: $amarillo;
+                cursor: pointer;
+            }
+            p {
+                font-family: 'Source Sans Pro', sans-serif;
+                color: white;
+                font-size: 15px;
+                padding-top: 10px;
+            }
+            .redes {
+                margin-top: 20px;
+                #redesIcon {
+                    fill: white;
+                    margin-right: 10px;
+                }
+                #redesIcon:hover {
+                    fill: $amarillo;
+                    cursor: pointer;
+                }
+            }
+        }
+        .colDos {
+            ul {
+                list-style: none;
+                @media only screen and (max-width: 360px) {
+                    display: inline-block;
+                }
+                li {
+                    @media only screen and (max-width: 360px) {
+                        display: inline-block;
+                        padding: 6px;
+                    }
+                    a {
+                        font-family: 'Source Sans Pro', sans-serif;
+                        color: white;
+                        font-size: 15px;
+                        text-decoration: none;
+                    }
+                    a:hover {
+                        color: $amarillo;
+                    }
+                }
+            }
+        }
+        .colTres {
+            width: 23%;
+            @media only screen and (max-width: 360px) {
+                width: 90%;
+            }
+            h1 {
+                font-family: BreeSerif-Regular;
+                color: white;
+                font-size: 20px;
+                font-weight: lighter;
+            }
+            .correo {
+                display: flex;
+                align-items: center;
+                margin-top: 15px;
+                input {
+                    width: 100%;
+                    height: 40px;
+                    border: none;
+                    border-top-left-radius: 40px;
+                    border-bottom-left-radius: 40px;
+                }
+                input::placeholder {
+                    color: $azulOscuro;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-weight: 300;
+                    font-size: 15px;
+                    padding-left: 20px,
+                }
+                button {
+                    width: 40%;
+                    height: 40px;
+                    border: none;
+                    background-color: $verdeClaro;
+                    font-family: BreeSerif-Regular;
+                    color: $azulOscuro;
+                    font-size: 15px;
+                    border-top-right-radius: 40px;
+                    border-bottom-right-radius: 40px;
+                    margin-left: -4px;
+                }
+                button:hover {
+                    background-color: $lila;
+                    cursor: pointer;
+                    color: white;
+                }
+            } //Checkbox________________
+            /* The container */
+            .container {
+                display: block;
+                position: relative;
+                padding-left: 28px;
+                margin-top: 15px;
+                cursor: pointer;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 300;
+                font-size: 15px;
+                color: white;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                span {
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-weight: 600;
+                    font-style: italic;
+                    font-size: 18px;
+                    color: white;
+                }
+                span:hover {
+                    color: $verdeClaro;
+                    font-weight: 600;
+                }
+            }
+            /* Hide the browser's default checkbox */
+            .container input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+            }
+            /* Create a custom checkbox */
+            .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 20px;
+                width: 20px;
+                background-color: white;
+                border-radius: 7px;
+            }
+            /* On mouse-over, add a grey background color */
+            .container:hover input~.checkmark {
+                background-color: white;
+            }
+            /* When the checkbox is checked, add a blue background */
+            .container input:checked~.checkmark {
+                background-color: $verdeClaro;
+            }
+            /* Create the checkmark/indicator (hidden when not checked) */
+            .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+            /* Show the checkmark when checked */
+            .container input:checked~.checkmark:after {
+                display: block;
+            }
+            /* Style the checkmark/indicator */
+            .container .checkmark:after {
+                left: 5px;
+                top: 2px;
+                width: 7px;
+                height: 10px;
+                border: solid $azulOscuro;
+                border-width: 0 3px 3px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+        }
+        .colCuatro {
+            width: 10%;
+            @media only screen and (max-width: 360px) {
+                width: 60%;
+                text-align: center;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 300;
+                font-size: 17px;
+            }
+            a:hover {
+                color: $amarillo;
+            }
+            .descarga {
+                background-color: transparent;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                border-radius: 100px;
+                border: solid white 2px;
+                transition: linear 0.2s;
+                color: white;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 300;
+                font-size: 17px;
+                margin-bottom: 15px;
+            }
+            .descarga:hover {
+                background-color: $verdeClaro;
+                border: solid $verdeClaro 2px;
+                color: $azulOscuro;
+                font-weight: 300;
+            }
+        }
+    }
+    .filaAbajo {
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        width: 63%;
+        @media only screen and (max-width: 360px) {
+            width: 90%;
+        }
+        .vl {
+            border-bottom: 1px solid white;
+            width: 100%;
+            z-index: 1;
+            margin-bottom: 15px;
+            @media only screen and (max-width: 360px) {
+                width: 100%;
+                margin-top: 30px;
+            }
+        }
+        .derechos {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @media only screen and (max-width: 360px) {
+                flex-direction: column;
+            }
+            p {
+                font-family: 'Source Sans Pro', sans-serif;
+                color: white;
+                font-size: 15px;
+            }
+            .termino {
+                @media only screen and (max-width: 360px) {
+                    width: 70%;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-weight: 300;
+                    font-size: 17px;
+                    padding-left: 20px;
+                }
+                a:hover {
+                    color: $amarillo;
+                }
+            }
+        }
+    }
+}
