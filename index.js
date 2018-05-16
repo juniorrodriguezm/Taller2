@@ -34,6 +34,10 @@ app.get('/', (req, res) => {
             categoria: req.query.categoria
         });
 
+        if (req.query.licencia)
+        fuentes.filter({
+            licencia: req.query.licencia
+        });
 
         fuentes.toArray((err, result) => {
         console.log('Escuchando servidor')
